@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		22BFAC0922E48DDB00EA833B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC0822E48DDB00EA833B /* AppDelegate.swift */; };
-		22BFAC0B22E48DDB00EA833B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC0A22E48DDB00EA833B /* ViewController.swift */; };
+		22BFAC0B22E48DDB00EA833B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC0A22E48DDB00EA833B /* GameView.swift */; };
 		22BFAC0E22E48DDB00EA833B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BFAC0C22E48DDB00EA833B /* Main.storyboard */; };
 		22BFAC1122E48DDB00EA833B /* ViperIos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC0F22E48DDB00EA833B /* ViperIos.xcdatamodeld */; };
 		22BFAC1322E48DDB00EA833B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BFAC1222E48DDB00EA833B /* Assets.xcassets */; };
 		22BFAC1622E48DDB00EA833B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BFAC1422E48DDB00EA833B /* LaunchScreen.storyboard */; };
+		22BFAC1E22E48F5100EA833B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC1D22E48F5100EA833B /* MenuView.swift */; };
+		22BFAC2122E48F8400EA833B /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2022E48F8400EA833B /* StatsView.swift */; };
+		22BFAC2522E4938300EA833B /* Grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BFAC2422E4938300EA833B /* Grid.png */; };
+		22BFAC2722E4A48400EA833B /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2622E4A48400EA833B /* GamePresenter.swift */; };
+		22BFAC2922E4A6AA00EA833B /* PresenterViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2822E4A6AA00EA833B /* PresenterViewProtocols.swift */; };
+		22BFAC2B22E4A93A00EA833B /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2A22E4A93A00EA833B /* GameModel.swift */; };
+		22BFAC2D22E4AAEC00EA833B /* PresenterModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2C22E4AAEC00EA833B /* PresenterModelProtocols.swift */; };
+		22BFAC2F22E4ACA000EA833B /* GamePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2E22E4ACA000EA833B /* GamePlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22BFAC0522E48DDB00EA833B /* ViperIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BFAC0822E48DDB00EA833B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22BFAC0A22E48DDB00EA833B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22BFAC0A22E48DDB00EA833B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		22BFAC0D22E48DDB00EA833B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22BFAC1022E48DDB00EA833B /* ViperIos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViperIos.xcdatamodel; sourceTree = "<group>"; };
 		22BFAC1222E48DDB00EA833B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22BFAC1522E48DDB00EA833B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22BFAC1722E48DDB00EA833B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22BFAC1D22E48F5100EA833B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		22BFAC2022E48F8400EA833B /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		22BFAC2422E4938300EA833B /* Grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grid.png; sourceTree = "<group>"; };
+		22BFAC2622E4A48400EA833B /* GamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
+		22BFAC2822E4A6AA00EA833B /* PresenterViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewProtocols.swift; sourceTree = "<group>"; };
+		22BFAC2A22E4A93A00EA833B /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		22BFAC2C22E4AAEC00EA833B /* PresenterModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModelProtocols.swift; sourceTree = "<group>"; };
+		22BFAC2E22E4ACA000EA833B /* GamePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +72,11 @@
 		22BFAC0722E48DDB00EA833B /* ViperIos */ = {
 			isa = PBXGroup;
 			children = (
+				22BFAC2422E4938300EA833B /* Grid.png */,
+				22BFAC2222E48F9700EA833B /* Game */,
+				22BFAC1F22E48F5700EA833B /* Menu */,
+				22BFAC2322E48F9D00EA833B /* Stats */,
 				22BFAC0822E48DDB00EA833B /* AppDelegate.swift */,
-				22BFAC0A22E48DDB00EA833B /* ViewController.swift */,
 				22BFAC0C22E48DDB00EA833B /* Main.storyboard */,
 				22BFAC1222E48DDB00EA833B /* Assets.xcassets */,
 				22BFAC1422E48DDB00EA833B /* LaunchScreen.storyboard */,
@@ -65,6 +84,35 @@
 				22BFAC0F22E48DDB00EA833B /* ViperIos.xcdatamodeld */,
 			);
 			path = ViperIos;
+			sourceTree = "<group>";
+		};
+		22BFAC1F22E48F5700EA833B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				22BFAC1D22E48F5100EA833B /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		22BFAC2222E48F9700EA833B /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				22BFAC0A22E48DDB00EA833B /* GameView.swift */,
+				22BFAC2622E4A48400EA833B /* GamePresenter.swift */,
+				22BFAC2A22E4A93A00EA833B /* GameModel.swift */,
+				22BFAC2822E4A6AA00EA833B /* PresenterViewProtocols.swift */,
+				22BFAC2C22E4AAEC00EA833B /* PresenterModelProtocols.swift */,
+				22BFAC2E22E4ACA000EA833B /* GamePlayer.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		22BFAC2322E48F9D00EA833B /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				22BFAC2022E48F8400EA833B /* StatsView.swift */,
+			);
+			path = Stats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22BFAC1622E48DDB00EA833B /* LaunchScreen.storyboard in Resources */,
+				22BFAC2522E4938300EA833B /* Grid.png in Resources */,
 				22BFAC1322E48DDB00EA833B /* Assets.xcassets in Resources */,
 				22BFAC0E22E48DDB00EA833B /* Main.storyboard in Resources */,
 			);
@@ -138,7 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BFAC0B22E48DDB00EA833B /* ViewController.swift in Sources */,
+				22BFAC0B22E48DDB00EA833B /* GameView.swift in Sources */,
+				22BFAC2922E4A6AA00EA833B /* PresenterViewProtocols.swift in Sources */,
+				22BFAC2F22E4ACA000EA833B /* GamePlayer.swift in Sources */,
+				22BFAC2D22E4AAEC00EA833B /* PresenterModelProtocols.swift in Sources */,
+				22BFAC2122E48F8400EA833B /* StatsView.swift in Sources */,
+				22BFAC2722E4A48400EA833B /* GamePresenter.swift in Sources */,
+				22BFAC1E22E48F5100EA833B /* MenuView.swift in Sources */,
+				22BFAC2B22E4A93A00EA833B /* GameModel.swift in Sources */,
 				22BFAC0922E48DDB00EA833B /* AppDelegate.swift in Sources */,
 				22BFAC1122E48DDB00EA833B /* ViperIos.xcdatamodeld in Sources */,
 			);
