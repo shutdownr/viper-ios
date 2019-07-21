@@ -1,5 +1,5 @@
 //
-//  GameModel.swift
+//  GameInteractor.swift
 //  ViperIos
 //
 //  Created by Tim on 21.07.19.
@@ -8,27 +8,24 @@
 
 import Foundation
 
-class GameModel: NSObject, PresenterToModel {
+class GameInteractor: NSObject, PresenterToInteractor {
     private static var emptyGame: [TileType] = [.None, .None, .None, .None, .None, .None, .None, .None, .None]
     private var game: [TileType]
     private var isPlayer1Turn: Bool
 
-    private var player1: GamePlayer
-    private var player2: GamePlayer
+    private var player1: PlayerEntity
+    private var player2: PlayerEntity
 
-    var presenter: ModelToPresenter!
+    var presenter: InteractorToPresenter!
 
-    init(presenter: ModelToPresenter) {
-        self.presenter = presenter
-        game = GameModel.emptyGame
+    override init() {
+        game = GameInteractor.emptyGame
         isPlayer1Turn = true
-        player1 = GamePlayer(symbol: "🐍")
-        player2 = GamePlayer(symbol: "🦅")
+        player1 = PlayerEntity(symbol: "🐍")
+        player2 = PlayerEntity(symbol: "🦅")
     }
 
-    func getPlayers() -> (player1: GamePlayer, player2: GamePlayer) {
-        print(player1.symbol)
-        print(player2.symbol)
+    func getPlayers() -> (player1: PlayerEntity, player2: PlayerEntity) {
         return (player1: player1, player2: player2)
     }
 
@@ -43,7 +40,7 @@ class GameModel: NSObject, PresenterToModel {
     }
 
     func reset() {
-        game = GameModel.emptyGame
+        game = GameInteractor.emptyGame
         isPlayer1Turn = true
         presenter.boardUpdated(board: game)
     }
@@ -57,24 +54,24 @@ enum TilePosition {
     case TopLeft, TopMiddle, TopRight, MidLeft, MidMiddle, MidRight, BotLeft, BotMiddle, BotRight
     func toInt() -> Int {
         switch self {
-            case .TopLeft:
-                return 0
-            case .TopMiddle:
-                return 1
-            case .TopRight:
-                return 2
-            case .MidLeft:
-                return 3
-            case .MidMiddle:
-                return 4
-            case .MidRight:
-                return 5
-            case .BotLeft:
-                return 6
-            case .BotMiddle:
-                return 7
-            case .BotRight:
-                return 8
+        case .TopLeft:
+            return 0
+        case .TopMiddle:
+            return 1
+        case .TopRight:
+            return 2
+        case .MidLeft:
+            return 3
+        case .MidMiddle:
+            return 4
+        case .MidRight:
+            return 5
+        case .BotLeft:
+            return 6
+        case .BotMiddle:
+            return 7
+        case .BotRight:
+            return 8
         }
     }
     static func fromInt(_ int: Int) -> TilePosition {

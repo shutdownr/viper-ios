@@ -7,21 +7,27 @@
 //
 
 import Foundation
+import UIKit
 
-class GamePresenter: NSObject, ViewToPresenter, ModelToPresenter {
+class GamePresenter: NSObject, ViewToPresenter, InteractorToPresenter {
     var view: PresenterToView!
-    var model: PresenterToModel!
+    var interactor: PresenterToInteractor!
+    var router: GameRouter!
 
     func tileSelected(position: TilePosition) {
-        model.claimTile(position: position)
+        interactor.claimTile(position: position)
     }
 
     func reset() {
-        model.reset()
+        interactor.reset()
+    }
+
+    func menu(navigationController: UINavigationController) {
+        router.showMenu(navigationController: navigationController)
     }
 
     func boardUpdated(board: [TileType]) {
-        let players = model.getPlayers()
+        let players = interactor.getPlayers()
         let contents = board.map({ type -> String in
             switch type {
             case .None:

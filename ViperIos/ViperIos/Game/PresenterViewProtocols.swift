@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol PresenterToView {
     func setButtonContent(button: TilePosition, text: String)
@@ -16,4 +17,5 @@ protocol PresenterToView {
 protocol ViewToPresenter {
     func tileSelected(position: TilePosition)
     func reset()
+    func menu(navigationController: UINavigationController)
 }

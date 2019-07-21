@@ -23,10 +23,8 @@ class GameView: UIViewController, PresenterToView {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        presenter = GamePresenter()
-        (presenter as! GamePresenter).model = GameModel(presenter: presenter as! GamePresenter)
-        (presenter as! GamePresenter).view = self
+        navigationItem.hidesBackButton = true
+        navigationItem.title = "Game"
     }
 
     func showError(title: String, error: String) {
@@ -89,6 +87,8 @@ class GameView: UIViewController, PresenterToView {
     }
 
     @IBAction func menu(_ sender: Any) {
+        guard let nav = navigationController else { return }
+        presenter.menu(navigationController: nav)
     }
     @IBAction func restart(_ sender: Any) {
         presenter.reset()
