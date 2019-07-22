@@ -39,8 +39,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teR-KI-inR">
-                                <rect key="frame" x="5" y="124" width="404" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="5" y="429" width="404" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -117,6 +117,7 @@
                             <constraint firstItem="NBu-HW-Xfk" firstAttribute="width" secondItem="ed3-TS-G65" secondAttribute="width" id="2eM-Yh-fnH"/>
                             <constraint firstItem="3u5-Ce-pue" firstAttribute="height" secondItem="ed3-TS-G65" secondAttribute="height" id="2jk-c5-XDk"/>
                             <constraint firstItem="lSZ-pT-h6g" firstAttribute="bottom" secondItem="DPe-DJ-OPR" secondAttribute="bottom" id="2qm-i9-Hwg"/>
+                            <constraint firstItem="teR-KI-inR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="7Hn-sh-RNB"/>
                             <constraint firstItem="tdy-8l-Hcn" firstAttribute="width" secondItem="ed3-TS-G65" secondAttribute="width" id="8xs-cK-XB0"/>
                             <constraint firstItem="ed3-TS-G65" firstAttribute="leading" secondItem="DPe-DJ-OPR" secondAttribute="leading" id="ABd-ZB-GB0"/>
                             <constraint firstItem="teR-KI-inR" firstAttribute="width" secondItem="DPe-DJ-OPR" secondAttribute="width" id="AC7-UA-oFj"/>
@@ -126,7 +127,6 @@
                             <constraint firstItem="ZJx-B0-65h" firstAttribute="leading" secondItem="DPe-DJ-OPR" secondAttribute="leading" id="FDi-Xr-eTZ"/>
                             <constraint firstItem="lSZ-pT-h6g" firstAttribute="width" secondItem="ed3-TS-G65" secondAttribute="width" id="Ffa-mi-5cx"/>
                             <constraint firstItem="V0n-sY-1jn" firstAttribute="top" secondItem="rKA-5n-eLW" secondAttribute="bottom" constant="30" id="G0v-6H-s1i"/>
-                            <constraint firstItem="teR-KI-inR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="IIa-iu-paO"/>
                             <constraint firstItem="ZJx-B0-65h" firstAttribute="width" secondItem="ed3-TS-G65" secondAttribute="width" id="KsE-76-EsF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DPe-DJ-OPR" secondAttribute="trailing" constant="5" id="Ltn-uQ-2fX"/>
                             <constraint firstItem="rKA-5n-eLW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LxE-Dz-FtH"/>
@@ -165,9 +165,13 @@
                         <outlet property="botLeft" destination="ZJx-B0-65h" id="As8-Ox-P4v"/>
                         <outlet property="botMiddle" destination="7ca-La-3Yw" id="sbY-MZ-JJG"/>
                         <outlet property="botRight" destination="lSZ-pT-h6g" id="z1k-HC-t2b"/>
+                        <outlet property="grid" destination="DPe-DJ-OPR" id="gZM-J2-cdx"/>
+                        <outlet property="menu" destination="V0n-sY-1jn" id="rOq-MX-q2P"/>
                         <outlet property="midLeft" destination="NBu-HW-Xfk" id="U4R-nX-Evt"/>
                         <outlet property="midMiddle" destination="b5q-Gk-CDE" id="X8e-Tq-b65"/>
                         <outlet property="midRight" destination="3u5-Ce-pue" id="jTA-ue-ZiN"/>
+                        <outlet property="restart" destination="rKA-5n-eLW" id="q9R-zu-ha9"/>
+                        <outlet property="result" destination="teR-KI-inR" id="SDd-iA-Ve9"/>
                         <outlet property="topLeft" destination="ed3-TS-G65" id="2z1-DW-3a2"/>
                         <outlet property="topMiddle" destination="tdy-8l-Hcn" id="kYb-TK-0cP"/>
                         <outlet property="topRight" destination="ShY-4P-um5" id="vI3-le-yO8"/>

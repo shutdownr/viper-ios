@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
+        <attribute name="botLeft" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="botMiddle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="botRight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isPlayer1Turn" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="midLeft" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="midMiddle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="midRight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="topLeft" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="topMiddle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="topRight" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Game" positionX="-63" positionY="-18" width="128" height="195"/>
+    </elements>
 </model>

@@ -18,6 +18,11 @@ class GameView: UIViewController, PresenterToView {
     @IBOutlet weak var botLeft: UIButton!
     @IBOutlet weak var botMiddle: UIButton!
     @IBOutlet weak var botRight: UIButton!
+    
+    @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var restart: UIButton!
+    @IBOutlet weak var menu: UIButton!
+    @IBOutlet weak var grid: UIImageView!
 
     var presenter: ViewToPresenter!
 
@@ -25,6 +30,7 @@ class GameView: UIViewController, PresenterToView {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         navigationItem.title = "Game"
+        presenter.viewHasLoaded()
     }
 
     func showError(title: String, error: String) {
@@ -54,6 +60,35 @@ class GameView: UIViewController, PresenterToView {
             case .BotRight:
                 botRight.setTitle(text, for: .normal)
         }
+    }
+
+    func setResultVisibility(visible: Bool) {
+        result.isHidden = !visible
+    }
+
+    func setRestartVisibility(visible: Bool) {
+        restart.isHidden = !visible
+    }
+
+    func setMenuVisibility(visible: Bool) {
+        menu.isHidden = !visible
+    }
+
+    func setGameVisibility(visible: Bool) {
+        grid.isHidden = !visible
+        topLeft.isHidden = !visible
+        topMiddle.isHidden = !visible
+        topRight.isHidden = !visible
+        midLeft.isHidden = !visible
+        midMiddle.isHidden = !visible
+        midRight.isHidden = !visible
+        botLeft.isHidden = !visible
+        botMiddle.isHidden = !visible
+        botRight.isHidden = !visible
+    }
+
+    func setResultContent(content: String) {
+        result.text = content
     }
 
     @IBAction func topLeft(_ sender: Any) {

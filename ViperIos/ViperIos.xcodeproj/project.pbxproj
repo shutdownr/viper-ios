@@ -25,6 +25,9 @@
 		22BFAC3522E4B99900EA833B /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3422E4B99900EA833B /* MenuRouter.swift */; };
 		22BFAC3722E4BB3C00EA833B /* PresenterRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3622E4BB3C00EA833B /* PresenterRouterProtocols.swift */; };
 		22BFAC3922E4BDB500EA833B /* StatsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3822E4BDB500EA833B /* StatsRouter.swift */; };
+		22BFAC3B22E4C0B500EA833B /* GameCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3A22E4C0B500EA833B /* GameCoreDataService.swift */; };
+		22BFAC3D22E4C1A400EA833B /* InteractorCoreDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3C22E4C1A400EA833B /* InteractorCoreDataProtocols.swift */; };
+		22BFAC3F22E5CC2D00EA833B /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3E22E5CC2D00EA833B /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		22BFAC3422E4B99900EA833B /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
 		22BFAC3622E4BB3C00EA833B /* PresenterRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterRouterProtocols.swift; sourceTree = "<group>"; };
 		22BFAC3822E4BDB500EA833B /* StatsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsRouter.swift; sourceTree = "<group>"; };
+		22BFAC3A22E4C0B500EA833B /* GameCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoreDataService.swift; sourceTree = "<group>"; };
+		22BFAC3C22E4C1A400EA833B /* InteractorCoreDataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorCoreDataProtocols.swift; sourceTree = "<group>"; };
+		22BFAC3E22E5CC2D00EA833B /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +116,13 @@
 				22BFAC2622E4A48400EA833B /* GamePresenter.swift */,
 				22BFAC3222E4B81200EA833B /* GameRouter.swift */,
 				22BFAC3022E4B5F700EA833B /* GameInteractor.swift */,
+				22BFAC3A22E4C0B500EA833B /* GameCoreDataService.swift */,
 				22BFAC2E22E4ACA000EA833B /* PlayerEntity.swift */,
 				22BFAC2822E4A6AA00EA833B /* PresenterViewProtocols.swift */,
 				22BFAC2C22E4AAEC00EA833B /* PresenterInteractorProtocols.swift */,
 				22BFAC3622E4BB3C00EA833B /* PresenterRouterProtocols.swift */,
+				22BFAC3C22E4C1A400EA833B /* InteractorCoreDataProtocols.swift */,
+				22BFAC3E22E5CC2D00EA833B /* GameState.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -207,10 +216,13 @@
 				22BFAC3522E4B99900EA833B /* MenuRouter.swift in Sources */,
 				22BFAC2D22E4AAEC00EA833B /* PresenterInteractorProtocols.swift in Sources */,
 				22BFAC2122E48F8400EA833B /* StatsView.swift in Sources */,
+				22BFAC3F22E5CC2D00EA833B /* GameState.swift in Sources */,
 				22BFAC3922E4BDB500EA833B /* StatsRouter.swift in Sources */,
+				22BFAC3B22E4C0B500EA833B /* GameCoreDataService.swift in Sources */,
 				22BFAC2722E4A48400EA833B /* GamePresenter.swift in Sources */,
 				22BFAC3722E4BB3C00EA833B /* PresenterRouterProtocols.swift in Sources */,
 				22BFAC1E22E48F5100EA833B /* MenuView.swift in Sources */,
+				22BFAC3D22E4C1A400EA833B /* InteractorCoreDataProtocols.swift in Sources */,
 				22BFAC0922E48DDB00EA833B /* AppDelegate.swift in Sources */,
 				22BFAC1122E48DDB00EA833B /* ViperIos.xcdatamodeld in Sources */,
 			);

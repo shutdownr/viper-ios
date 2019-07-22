@@ -15,11 +15,14 @@ class GameRouter : NSObject, PresenterToRouter {
         let presenter = GamePresenter()
         let interactor = GameInteractor()
         let router = GameRouter()
+        let coreDataService = GameCoreDataService()
         view.presenter = presenter
         presenter.view = view
         presenter.interactor = interactor
         presenter.router = router
         interactor.presenter = presenter
+        interactor.coreDataService = coreDataService
+        coreDataService.interactor = interactor
         return view
     }
 

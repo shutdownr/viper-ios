@@ -26,6 +26,18 @@ class GamePresenter: NSObject, ViewToPresenter, InteractorToPresenter {
         router.showMenu(navigationController: navigationController)
     }
 
+    func viewHasLoaded() {
+        interactor.loadCoreData()
+    }
+
+    func stateUpdated(state: GameState) {
+        view.setGameVisibility(visible: state.isGameVisible)
+        view.setMenuVisibility(visible: state.isMenuVisible)
+        view.setResultVisibility(visible: state.isResultVisible)
+        view.setRestartVisibility(visible: state.isRestartVisible)
+        view.setResultContent(content: state.resultContent)
+    }
+
     func boardUpdated(board: [TileType]) {
         let players = interactor.getPlayers()
         let contents = board.map({ type -> String in

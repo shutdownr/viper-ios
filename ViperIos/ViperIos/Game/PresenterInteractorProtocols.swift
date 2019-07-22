@@ -12,9 +12,11 @@ protocol PresenterToInteractor {
     func claimTile(position: TilePosition)
     func getPlayers() -> (player1: PlayerEntity, player2: PlayerEntity)
     func reset()
+    func loadCoreData()
 }
 
 protocol InteractorToPresenter {
     func error(title: String, error: String)
     func boardUpdated(board: [TileType])
+    func stateUpdated(state: GameState)
 }

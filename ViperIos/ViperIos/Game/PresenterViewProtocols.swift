@@ -12,10 +12,16 @@ import UIKit
 protocol PresenterToView {
     func setButtonContent(button: TilePosition, text: String)
     func showError(title: String, error: String)
+    func setResultVisibility(visible: Bool)
+    func setResultContent(content: String)
+    func setRestartVisibility(visible: Bool)
+    func setMenuVisibility(visible: Bool)
+    func setGameVisibility(visible: Bool)
 }
 
 protocol ViewToPresenter {
     func tileSelected(position: TilePosition)
     func reset()
     func menu(navigationController: UINavigationController)
+    func viewHasLoaded()
 }
