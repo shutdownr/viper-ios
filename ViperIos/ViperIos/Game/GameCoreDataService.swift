@@ -25,15 +25,12 @@ class GameCoreDataService: NSObject, GameInteractorToCoreData {
             case .None:
                 let wins = actualStats.value(forKey: "ties") as! Int
                 actualStats.setValue(wins + 1, forKey: "ties")
-                print("Total of \(wins+1) ties")
             case .Player1:
                 let wins = actualStats.value(forKey: "winsPlayer1") as! Int
                 actualStats.setValue(wins + 1, forKey: "winsPlayer1")
-                print("Player1 has \(wins+1) wins")
             case .Player2:
                 let wins = actualStats.value(forKey: "winsPlayer2") as! Int
                 actualStats.setValue(wins + 1, forKey: "winsPlayer2")
-                print("Player2 has \(wins+1) wins")
             }
             try managedContext.save()
         } catch let error as NSError {
@@ -74,7 +71,6 @@ class GameCoreDataService: NSObject, GameInteractorToCoreData {
         let request = NSFetchRequest<NSManagedObject>(entityName: "Game")
         do {
             let games = try managedContext.fetch(request)
-            print(games.count)
             guard let actualGame = games.first else { print("Got no game"); return nil }
             var gameArray: [TileType] = []
             gameArray.append(TileType.fromString(actualGame.value(forKey: "topLeft") as! String))

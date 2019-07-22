@@ -9,9 +9,10 @@
 import Foundation
 
 protocol StatsPresenterToInteractor {
-
+    func loadStats()
 }
 
 protocol StatsInteractorToPresenter {
-
+    func statsUpdated(_ stats: (winsPlayer1: Int, winsPlayer2: Int, ties: Int)?)
+    func error(title: String, description: String)
 }

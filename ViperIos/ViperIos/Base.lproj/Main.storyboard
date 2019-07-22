@@ -226,9 +226,76 @@
                     <view key="view" contentMode="scaleToFill" id="rHu-Gb-h7j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1 Wins:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI0-Mb-lzb">
+                                <rect key="frame" x="154" y="144" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WinsP1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ry-Xe-mgV">
+                                <rect key="frame" x="179" y="185" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2 Wins:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tn-kz-nwZ">
+                                <rect key="frame" x="152.5" y="236" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WinsP2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Job-Rq-sq1">
+                                <rect key="frame" x="177.5" y="277" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ties:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEX-Nx-GqT">
+                                <rect key="frame" x="189" y="328" width="36.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TiesValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fk-Ss-qd2">
+                                <rect key="frame" x="170" y="369" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydY-2S-44v">
+                                <rect key="frame" x="187.5" y="802" width="39" height="30"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <action selector="menu:" destination="M8p-Tx-zpG" eventType="touchUpInside" id="6on-5k-HR8"/>
+                                    <action selector="menu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFK-wd-ET5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Ry-Xe-mgV" firstAttribute="top" secondItem="VI0-Mb-lzb" secondAttribute="bottom" constant="20" id="7t6-G8-iZx"/>
+                            <constraint firstItem="CDB-S2-Jmc" firstAttribute="bottom" secondItem="ydY-2S-44v" secondAttribute="bottom" constant="30" id="DQT-qP-maW"/>
+                            <constraint firstItem="VI0-Mb-lzb" firstAttribute="centerX" secondItem="CDB-S2-Jmc" secondAttribute="centerX" id="Efx-3r-lgR"/>
+                            <constraint firstItem="6fk-Ss-qd2" firstAttribute="top" secondItem="mEX-Nx-GqT" secondAttribute="bottom" constant="20" id="EpU-xd-BG7"/>
+                            <constraint firstItem="Job-Rq-sq1" firstAttribute="centerX" secondItem="8tn-kz-nwZ" secondAttribute="centerX" id="GHB-q8-xx9"/>
+                            <constraint firstItem="Job-Rq-sq1" firstAttribute="top" secondItem="8tn-kz-nwZ" secondAttribute="bottom" constant="20" id="M7Y-vZ-haz"/>
+                            <constraint firstItem="6fk-Ss-qd2" firstAttribute="centerX" secondItem="mEX-Nx-GqT" secondAttribute="centerX" id="YTw-xp-gow"/>
+                            <constraint firstItem="8tn-kz-nwZ" firstAttribute="centerX" secondItem="4Ry-Xe-mgV" secondAttribute="centerX" id="fAO-It-gM6"/>
+                            <constraint firstItem="ydY-2S-44v" firstAttribute="centerX" secondItem="CDB-S2-Jmc" secondAttribute="centerX" id="lUV-fk-H0E"/>
+                            <constraint firstItem="mEX-Nx-GqT" firstAttribute="top" secondItem="Job-Rq-sq1" secondAttribute="bottom" constant="30" id="nCg-5U-t7X"/>
+                            <constraint firstItem="4Ry-Xe-mgV" firstAttribute="centerX" secondItem="VI0-Mb-lzb" secondAttribute="centerX" id="niI-rT-aqp"/>
+                            <constraint firstItem="mEX-Nx-GqT" firstAttribute="centerX" secondItem="Job-Rq-sq1" secondAttribute="centerX" id="sIy-vt-9Fg"/>
+                            <constraint firstItem="8tn-kz-nwZ" firstAttribute="top" secondItem="4Ry-Xe-mgV" secondAttribute="bottom" constant="30" id="sOr-92-hqZ"/>
+                            <constraint firstItem="VI0-Mb-lzb" firstAttribute="top" secondItem="CDB-S2-Jmc" secondAttribute="top" constant="100" id="zBx-do-Bmt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CDB-S2-Jmc"/>
                     </view>
+                    <connections>
+                        <outlet property="player1Wins" destination="4Ry-Xe-mgV" id="nNo-lV-70C"/>
+                        <outlet property="player2Wins" destination="Job-Rq-sq1" id="nca-gd-fq3"/>
+                        <outlet property="ties" destination="6fk-Ss-qd2" id="mUn-gq-Rdg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7nL-ZG-W7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -6,8 +6,8 @@
 //  Copyright © 2019 Tim. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol StatsPresenterToRouter {
-
+    func showMenu(navigationController: UINavigationController)
 }

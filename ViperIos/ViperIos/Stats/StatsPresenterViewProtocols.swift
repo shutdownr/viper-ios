@@ -6,12 +6,16 @@
 //  Copyright © 2019 Tim. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol StatsPresenterToView {
-
+    func updatePlayer1Wins(wins: String)
+    func updatePlayer2Wins(wins: String)
+    func updateTies(ties: String)
+    func showError(title: String, description: String)
 }
 
 protocol StatsViewToPresenter {
-    
+    func viewHasLoaded()
+    func menu(navigationController: UINavigationController)
 }
