@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GameInteractor: NSObject, PresenterToInteractor, CoreDataToInteractor {
+class GameInteractor: NSObject, GamePresenterToInteractor, GameCoreDataToInteractor {
     private static var emptyGame: [TileType] = [.None, .None, .None, .None, .None, .None, .None, .None, .None]
     private var game: [TileType]
     private var isPlayer1Turn: Bool
@@ -17,8 +17,8 @@ class GameInteractor: NSObject, PresenterToInteractor, CoreDataToInteractor {
     private var player2: PlayerEntity
 
     private var currentState: GameState!
-    var presenter: InteractorToPresenter!
-    var coreDataService: InteractorToCoreData!
+    var presenter: GameInteractorToPresenter!
+    var coreDataService: GameInteractorToCoreData!
 
     override init() {
         game = GameInteractor.emptyGame
@@ -62,6 +62,7 @@ class GameInteractor: NSObject, PresenterToInteractor, CoreDataToInteractor {
 
     private func hasWon(player: TileType) {
         let finishedState = FinishedState()
+        coreDataService.gameWon(winner: player)
         if player == .None {
             finishedState.resultContent = "It's a tie!"
         } else {

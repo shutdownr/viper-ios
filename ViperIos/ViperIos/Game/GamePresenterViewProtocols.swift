@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol PresenterToView {
+protocol GamePresenterToView {
     func setButtonContent(button: TilePosition, text: String)
     func showError(title: String, error: String)
     func setResultVisibility(visible: Bool)
@@ -19,7 +19,7 @@ protocol PresenterToView {
     func setGameVisibility(visible: Bool)
 }
 
-protocol ViewToPresenter {
+protocol GameViewToPresenter {
     func tileSelected(position: TilePosition)
     func reset()
     func menu(navigationController: UINavigationController)

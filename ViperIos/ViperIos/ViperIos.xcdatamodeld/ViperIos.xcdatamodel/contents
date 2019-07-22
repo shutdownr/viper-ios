@@ -12,7 +12,13 @@
         <attribute name="topMiddle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="topRight" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Stats" representedClassName="Stats" syncable="YES" codeGenerationType="class">
+        <attribute name="ties" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="winsPlayer1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="winsPlayer2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Game" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="Stats" positionX="-54" positionY="63" width="128" height="90"/>
     </elements>
 </model>

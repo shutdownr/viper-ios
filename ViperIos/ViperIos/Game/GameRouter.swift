@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class GameRouter : NSObject, PresenterToRouter {
+class GameRouter : NSObject, GamePresenterToRouter {
     static func createModule() -> GameView {
         let view = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "Game") as! GameView
         let presenter = GamePresenter()

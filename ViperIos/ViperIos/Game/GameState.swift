@@ -36,6 +36,5 @@ class FinishedState: GameState {
         isMenuVisible = true
         isRestartVisible = true
         isResultVisible = true
-        isGameVisible = false
     }
 }

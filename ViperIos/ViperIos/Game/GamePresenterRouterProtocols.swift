@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-protocol PresenterToRouter {
+protocol GamePresenterToRouter {
     func showMenu(navigationController: UINavigationController)
 }

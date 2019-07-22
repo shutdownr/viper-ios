@@ -9,8 +9,37 @@
 import UIKit
 import CoreData
 
-class GameCoreDataService: NSObject, InteractorToCoreData {
+class GameCoreDataService: NSObject, GameInteractorToCoreData {
     var interactor : GameInteractor!
+
+    func gameWon(winner: TileType) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { interactor.error(title: "Error", error: "Unable to access the AppDelegate"); return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSManagedObject>(entityName: "Stats")
+
+        do {
+            let stats = try managedContext.fetch(request)
+            let statsEntity = NSEntityDescription.entity(forEntityName: "Stats", in: managedContext)!
+            let actualStats = stats.first ?? NSManagedObject(entity: statsEntity, insertInto: managedContext)
+            switch winner {
+            case .None:
+                let wins = actualStats.value(forKey: "ties") as! Int
+                actualStats.setValue(wins + 1, forKey: "ties")
+                print("Total of \(wins+1) ties")
+            case .Player1:
+                let wins = actualStats.value(forKey: "winsPlayer1") as! Int
+                actualStats.setValue(wins + 1, forKey: "winsPlayer1")
+                print("Player1 has \(wins+1) wins")
+            case .Player2:
+                let wins = actualStats.value(forKey: "winsPlayer2") as! Int
+                actualStats.setValue(wins + 1, forKey: "winsPlayer2")
+                print("Player2 has \(wins+1) wins")
+            }
+            try managedContext.save()
+        } catch let error as NSError {
+            interactor.error(title: "Saving Error", error: error.localizedDescription)
+        }
+    }
 
     func saveNewData(game: [TileType], isPlayer1Turn: Bool) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { interactor.error(title: "Error", error: "Unable to access the AppDelegate"); return }

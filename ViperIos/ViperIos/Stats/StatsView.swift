@@ -8,7 +8,9 @@
 
 import UIKit
 
-class StatsView: UIViewController {
+class StatsView: UIViewController, StatsPresenterToView {
+
+    var presenter: StatsViewToPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class GamePresenter: NSObject, ViewToPresenter, InteractorToPresenter {
-    var view: PresenterToView!
-    var interactor: PresenterToInteractor!
+class GamePresenter: NSObject, GameViewToPresenter, GameInteractorToPresenter {
+    var view: GamePresenterToView!
+    var interactor: GamePresenterToInteractor!
     var router: GameRouter!
 
     func tileSelected(position: TilePosition) {

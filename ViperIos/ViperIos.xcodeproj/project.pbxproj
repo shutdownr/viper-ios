@@ -17,17 +17,24 @@
 		22BFAC2122E48F8400EA833B /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2022E48F8400EA833B /* StatsView.swift */; };
 		22BFAC2522E4938300EA833B /* Grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BFAC2422E4938300EA833B /* Grid.png */; };
 		22BFAC2722E4A48400EA833B /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2622E4A48400EA833B /* GamePresenter.swift */; };
-		22BFAC2922E4A6AA00EA833B /* PresenterViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2822E4A6AA00EA833B /* PresenterViewProtocols.swift */; };
-		22BFAC2D22E4AAEC00EA833B /* PresenterInteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2C22E4AAEC00EA833B /* PresenterInteractorProtocols.swift */; };
+		22BFAC2922E4A6AA00EA833B /* GamePresenterViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2822E4A6AA00EA833B /* GamePresenterViewProtocols.swift */; };
+		22BFAC2D22E4AAEC00EA833B /* GamePresenterInteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2C22E4AAEC00EA833B /* GamePresenterInteractorProtocols.swift */; };
 		22BFAC2F22E4ACA000EA833B /* PlayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC2E22E4ACA000EA833B /* PlayerEntity.swift */; };
 		22BFAC3122E4B5F700EA833B /* GameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3022E4B5F700EA833B /* GameInteractor.swift */; };
 		22BFAC3322E4B81200EA833B /* GameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3222E4B81200EA833B /* GameRouter.swift */; };
 		22BFAC3522E4B99900EA833B /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3422E4B99900EA833B /* MenuRouter.swift */; };
-		22BFAC3722E4BB3C00EA833B /* PresenterRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3622E4BB3C00EA833B /* PresenterRouterProtocols.swift */; };
+		22BFAC3722E4BB3C00EA833B /* GamePresenterRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3622E4BB3C00EA833B /* GamePresenterRouterProtocols.swift */; };
 		22BFAC3922E4BDB500EA833B /* StatsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3822E4BDB500EA833B /* StatsRouter.swift */; };
 		22BFAC3B22E4C0B500EA833B /* GameCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3A22E4C0B500EA833B /* GameCoreDataService.swift */; };
-		22BFAC3D22E4C1A400EA833B /* InteractorCoreDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3C22E4C1A400EA833B /* InteractorCoreDataProtocols.swift */; };
+		22BFAC3D22E4C1A400EA833B /* GameInteractorCoreDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3C22E4C1A400EA833B /* GameInteractorCoreDataProtocols.swift */; };
 		22BFAC3F22E5CC2D00EA833B /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC3E22E5CC2D00EA833B /* GameState.swift */; };
+		22BFAC4122E5DEE000EA833B /* StatsCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4022E5DEE000EA833B /* StatsCoreDataService.swift */; };
+		22BFAC4322E5DF3400EA833B /* StatsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4222E5DF3400EA833B /* StatsInteractor.swift */; };
+		22BFAC4522E5DF5400EA833B /* StatsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4422E5DF5400EA833B /* StatsPresenter.swift */; };
+		22BFAC4722E5DF7C00EA833B /* StatsPresenterViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4622E5DF7C00EA833B /* StatsPresenterViewProtocols.swift */; };
+		22BFAC4922E5E09E00EA833B /* StatsPresenterRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4822E5E09E00EA833B /* StatsPresenterRouterProtocols.swift */; };
+		22BFAC4B22E5E0B400EA833B /* StatsPresenterInteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4A22E5E0B400EA833B /* StatsPresenterInteractorProtocols.swift */; };
+		22BFAC4D22E5E0C500EA833B /* StatsInteractorCoreDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4C22E5E0C500EA833B /* StatsInteractorCoreDataProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,17 +50,24 @@
 		22BFAC2022E48F8400EA833B /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		22BFAC2422E4938300EA833B /* Grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grid.png; sourceTree = "<group>"; };
 		22BFAC2622E4A48400EA833B /* GamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
-		22BFAC2822E4A6AA00EA833B /* PresenterViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewProtocols.swift; sourceTree = "<group>"; };
-		22BFAC2C22E4AAEC00EA833B /* PresenterInteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInteractorProtocols.swift; sourceTree = "<group>"; };
+		22BFAC2822E4A6AA00EA833B /* GamePresenterViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenterViewProtocols.swift; sourceTree = "<group>"; };
+		22BFAC2C22E4AAEC00EA833B /* GamePresenterInteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenterInteractorProtocols.swift; sourceTree = "<group>"; };
 		22BFAC2E22E4ACA000EA833B /* PlayerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEntity.swift; sourceTree = "<group>"; };
 		22BFAC3022E4B5F700EA833B /* GameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInteractor.swift; sourceTree = "<group>"; };
 		22BFAC3222E4B81200EA833B /* GameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRouter.swift; sourceTree = "<group>"; };
 		22BFAC3422E4B99900EA833B /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
-		22BFAC3622E4BB3C00EA833B /* PresenterRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterRouterProtocols.swift; sourceTree = "<group>"; };
+		22BFAC3622E4BB3C00EA833B /* GamePresenterRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenterRouterProtocols.swift; sourceTree = "<group>"; };
 		22BFAC3822E4BDB500EA833B /* StatsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsRouter.swift; sourceTree = "<group>"; };
 		22BFAC3A22E4C0B500EA833B /* GameCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoreDataService.swift; sourceTree = "<group>"; };
-		22BFAC3C22E4C1A400EA833B /* InteractorCoreDataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorCoreDataProtocols.swift; sourceTree = "<group>"; };
+		22BFAC3C22E4C1A400EA833B /* GameInteractorCoreDataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInteractorCoreDataProtocols.swift; sourceTree = "<group>"; };
 		22BFAC3E22E5CC2D00EA833B /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		22BFAC4022E5DEE000EA833B /* StatsCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCoreDataService.swift; sourceTree = "<group>"; };
+		22BFAC4222E5DF3400EA833B /* StatsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsInteractor.swift; sourceTree = "<group>"; };
+		22BFAC4422E5DF5400EA833B /* StatsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPresenter.swift; sourceTree = "<group>"; };
+		22BFAC4622E5DF7C00EA833B /* StatsPresenterViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPresenterViewProtocols.swift; sourceTree = "<group>"; };
+		22BFAC4822E5E09E00EA833B /* StatsPresenterRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPresenterRouterProtocols.swift; sourceTree = "<group>"; };
+		22BFAC4A22E5E0B400EA833B /* StatsPresenterInteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPresenterInteractorProtocols.swift; sourceTree = "<group>"; };
+		22BFAC4C22E5E0C500EA833B /* StatsInteractorCoreDataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsInteractorCoreDataProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +131,12 @@
 				22BFAC3222E4B81200EA833B /* GameRouter.swift */,
 				22BFAC3022E4B5F700EA833B /* GameInteractor.swift */,
 				22BFAC3A22E4C0B500EA833B /* GameCoreDataService.swift */,
-				22BFAC2E22E4ACA000EA833B /* PlayerEntity.swift */,
-				22BFAC2822E4A6AA00EA833B /* PresenterViewProtocols.swift */,
-				22BFAC2C22E4AAEC00EA833B /* PresenterInteractorProtocols.swift */,
-				22BFAC3622E4BB3C00EA833B /* PresenterRouterProtocols.swift */,
-				22BFAC3C22E4C1A400EA833B /* InteractorCoreDataProtocols.swift */,
+				22BFAC2822E4A6AA00EA833B /* GamePresenterViewProtocols.swift */,
+				22BFAC3622E4BB3C00EA833B /* GamePresenterRouterProtocols.swift */,
+				22BFAC2C22E4AAEC00EA833B /* GamePresenterInteractorProtocols.swift */,
+				22BFAC3C22E4C1A400EA833B /* GameInteractorCoreDataProtocols.swift */,
 				22BFAC3E22E5CC2D00EA833B /* GameState.swift */,
+				22BFAC2E22E4ACA000EA833B /* PlayerEntity.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -131,7 +145,14 @@
 			isa = PBXGroup;
 			children = (
 				22BFAC2022E48F8400EA833B /* StatsView.swift */,
+				22BFAC4422E5DF5400EA833B /* StatsPresenter.swift */,
 				22BFAC3822E4BDB500EA833B /* StatsRouter.swift */,
+				22BFAC4222E5DF3400EA833B /* StatsInteractor.swift */,
+				22BFAC4022E5DEE000EA833B /* StatsCoreDataService.swift */,
+				22BFAC4622E5DF7C00EA833B /* StatsPresenterViewProtocols.swift */,
+				22BFAC4822E5E09E00EA833B /* StatsPresenterRouterProtocols.swift */,
+				22BFAC4A22E5E0B400EA833B /* StatsPresenterInteractorProtocols.swift */,
+				22BFAC4C22E5E0C500EA833B /* StatsInteractorCoreDataProtocols.swift */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -211,18 +232,25 @@
 				22BFAC3322E4B81200EA833B /* GameRouter.swift in Sources */,
 				22BFAC0B22E48DDB00EA833B /* GameView.swift in Sources */,
 				22BFAC3122E4B5F700EA833B /* GameInteractor.swift in Sources */,
-				22BFAC2922E4A6AA00EA833B /* PresenterViewProtocols.swift in Sources */,
+				22BFAC4D22E5E0C500EA833B /* StatsInteractorCoreDataProtocols.swift in Sources */,
+				22BFAC2922E4A6AA00EA833B /* GamePresenterViewProtocols.swift in Sources */,
+				22BFAC4322E5DF3400EA833B /* StatsInteractor.swift in Sources */,
+				22BFAC4122E5DEE000EA833B /* StatsCoreDataService.swift in Sources */,
+				22BFAC4722E5DF7C00EA833B /* StatsPresenterViewProtocols.swift in Sources */,
+				22BFAC4522E5DF5400EA833B /* StatsPresenter.swift in Sources */,
 				22BFAC2F22E4ACA000EA833B /* PlayerEntity.swift in Sources */,
 				22BFAC3522E4B99900EA833B /* MenuRouter.swift in Sources */,
-				22BFAC2D22E4AAEC00EA833B /* PresenterInteractorProtocols.swift in Sources */,
+				22BFAC2D22E4AAEC00EA833B /* GamePresenterInteractorProtocols.swift in Sources */,
+				22BFAC4922E5E09E00EA833B /* StatsPresenterRouterProtocols.swift in Sources */,
 				22BFAC2122E48F8400EA833B /* StatsView.swift in Sources */,
+				22BFAC4B22E5E0B400EA833B /* StatsPresenterInteractorProtocols.swift in Sources */,
 				22BFAC3F22E5CC2D00EA833B /* GameState.swift in Sources */,
 				22BFAC3922E4BDB500EA833B /* StatsRouter.swift in Sources */,
 				22BFAC3B22E4C0B500EA833B /* GameCoreDataService.swift in Sources */,
 				22BFAC2722E4A48400EA833B /* GamePresenter.swift in Sources */,
-				22BFAC3722E4BB3C00EA833B /* PresenterRouterProtocols.swift in Sources */,
+				22BFAC3722E4BB3C00EA833B /* GamePresenterRouterProtocols.swift in Sources */,
 				22BFAC1E22E48F5100EA833B /* MenuView.swift in Sources */,
-				22BFAC3D22E4C1A400EA833B /* InteractorCoreDataProtocols.swift in Sources */,
+				22BFAC3D22E4C1A400EA833B /* GameInteractorCoreDataProtocols.swift in Sources */,
 				22BFAC0922E48DDB00EA833B /* AppDelegate.swift in Sources */,
 				22BFAC1122E48DDB00EA833B /* ViperIos.xcdatamodeld in Sources */,
 			);

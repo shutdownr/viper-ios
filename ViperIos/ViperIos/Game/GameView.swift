@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameView: UIViewController, PresenterToView {
+class GameView: UIViewController, GamePresenterToView {
     @IBOutlet weak var topLeft: UIButton!
     @IBOutlet weak var topMiddle: UIButton!
     @IBOutlet weak var topRight: UIButton!
@@ -24,7 +24,7 @@ class GameView: UIViewController, PresenterToView {
     @IBOutlet weak var menu: UIButton!
     @IBOutlet weak var grid: UIImageView!
 
-    var presenter: ViewToPresenter!
+    var presenter: GameViewToPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()

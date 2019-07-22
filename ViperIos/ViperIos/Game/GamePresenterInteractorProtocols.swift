@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol PresenterToInteractor {
+protocol GamePresenterToInteractor {
     func claimTile(position: TilePosition)
     func getPlayers() -> (player1: PlayerEntity, player2: PlayerEntity)
     func reset()
     func loadCoreData()
 }
 
-protocol InteractorToPresenter {
+protocol GameInteractorToPresenter {
     func error(title: String, error: String)
     func boardUpdated(board: [TileType])
     func stateUpdated(state: GameState)

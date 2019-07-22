@@ -8,11 +8,12 @@
 
 import Foundation
 
-protocol InteractorToCoreData {
+protocol GameInteractorToCoreData {
     func saveNewData(game: [TileType], isPlayer1Turn: Bool)
     func loadData() -> (game: [TileType], isPlayer1Turn: Bool)?
+    func gameWon(winner: TileType)
 }
 
-protocol CoreDataToInteractor {
+protocol GameCoreDataToInteractor {
     func error(title: String, error: String)
 }
