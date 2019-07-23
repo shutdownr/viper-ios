@@ -9,8 +9,10 @@
 import Foundation
 
 class PlayerEntity {
+    public static var player1 = PlayerEntity(symbol: "🐍")
+    public static var player2 = PlayerEntity(symbol: "🦅")
     var symbol: Character
-    init(symbol: Character) {
+    private init(symbol: Character) {
         self.symbol = symbol
     }
 }

@@ -35,6 +35,7 @@
 		22BFAC4922E5E09E00EA833B /* StatsPresenterRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4822E5E09E00EA833B /* StatsPresenterRouterProtocols.swift */; };
 		22BFAC4B22E5E0B400EA833B /* StatsPresenterInteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4A22E5E0B400EA833B /* StatsPresenterInteractorProtocols.swift */; };
 		22BFAC4D22E5E0C500EA833B /* StatsInteractorCoreDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4C22E5E0C500EA833B /* StatsInteractorCoreDataProtocols.swift */; };
+		22BFAC4F22E739F000EA833B /* EnumEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFAC4E22E739F000EA833B /* EnumEntities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		22BFAC4822E5E09E00EA833B /* StatsPresenterRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPresenterRouterProtocols.swift; sourceTree = "<group>"; };
 		22BFAC4A22E5E0B400EA833B /* StatsPresenterInteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPresenterInteractorProtocols.swift; sourceTree = "<group>"; };
 		22BFAC4C22E5E0C500EA833B /* StatsInteractorCoreDataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsInteractorCoreDataProtocols.swift; sourceTree = "<group>"; };
+		22BFAC4E22E739F000EA833B /* EnumEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumEntities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				22BFAC3C22E4C1A400EA833B /* GameInteractorCoreDataProtocols.swift */,
 				22BFAC3E22E5CC2D00EA833B /* GameState.swift */,
 				22BFAC2E22E4ACA000EA833B /* PlayerEntity.swift */,
+				22BFAC4E22E739F000EA833B /* EnumEntities.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				22BFAC2F22E4ACA000EA833B /* PlayerEntity.swift in Sources */,
 				22BFAC3522E4B99900EA833B /* MenuRouter.swift in Sources */,
 				22BFAC2D22E4AAEC00EA833B /* GamePresenterInteractorProtocols.swift in Sources */,
+				22BFAC4F22E739F000EA833B /* EnumEntities.swift in Sources */,
 				22BFAC4922E5E09E00EA833B /* StatsPresenterRouterProtocols.swift in Sources */,
 				22BFAC2122E48F8400EA833B /* StatsView.swift in Sources */,
 				22BFAC4B22E5E0B400EA833B /* StatsPresenterInteractorProtocols.swift in Sources */,
