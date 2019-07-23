@@ -8,8 +8,8 @@ The VIPER pattern is a more specific implementation of the MVP pattern. It is of
 ### Flow of events in VIPER
 1. The user clicks on a button in the View.
 2. The View receives the IBAction, forwards the call to the Presenter.
-3. The presenter knows what to do after the callback and triggers an update function in the Iterator.
-4. The Iterator uses and updates the Entity, that saves the relevant application data. (The update can be asynchronous, with CoreData, ...)
+3. The Presenter knows what to do after the callback and triggers an update function in the Interactor.
+4. The Interactor uses and updates the Entity, that saves the relevant application data. (The update can be asynchronous, with CoreData, ...)
 5. After the update is done, the Interactor forwards the new data to the Presenter.
 6. The Presenter receives the data and transforms it into View-relevant data. (E.g. Strings for texts, Bool for visibilities, ...)
 7. The Presenter sends the formatted data to the View.
